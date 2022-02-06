@@ -1,0 +1,69 @@
+:root {
+  --main-color: rgb(159, 173, 185);
+  --current-font-weight: 700;
+  --current-stats: #a5db9b;
+}
+
+.profile {
+  width: 400px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px;
+}
+
+.description {
+  text-align: center;
+}
+
+.avatar:hover {
+  border-color: rgb(99, 204, 131);
+}
+
+.avatar {
+  width: 140px;
+  border: solid 6px transparent;
+  border-radius: 50%;
+  background-color: rgb(238, 189, 189);
+  margin-top: 20px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tag {
+  font-weight: var(--current-font-weight);
+  color: var(--main-color);
+}
+
+.location {
+  font-weight: var(--current-font-weight);
+  color: var(--main-color);
+}
+
+.label {
+  display: flex;
+  color: var(--main-color);
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+  font-weight: var(--current-font-weight);
+}
+.stats {
+  justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: var(--current-stats);
+}
+
+.stat__list {
+  display: inline-block;
+}
+.percentage {
+  display: flex;
+}
