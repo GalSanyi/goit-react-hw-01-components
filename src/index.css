@@ -1,3 +1,9 @@
+:root {
+  --main-color: rgb(159, 173, 185);
+  --current-font-weight: 700;
+  --current-stats: #a5db9b;
+}
+
 @import-normalize; /* bring in normalize.css styles */
 
 body {

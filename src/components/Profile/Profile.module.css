@@ -1,12 +1,8 @@
-:root {
-  --main-color: rgb(159, 173, 185);
-  --current-font-weight: 700;
-  --current-stats: #a5db9b;
-}
+
 
 .profile {
   width: 400px;
-
+  margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 50px;
 }

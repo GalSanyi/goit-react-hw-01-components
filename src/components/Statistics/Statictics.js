@@ -10,10 +10,10 @@ function Statistics({ stats}) {
 
         <ul className={ s.list}>
             {stats.map(stat =>
-                <li key={stats.id } className={ s.item}>
+                <li key={stat.id } className={ s.item}>
         
                 <span className={ s.label}>{ stat.label}</span>
-                <span className={s.percentage}>{ stat.percentage}</span>
+                <span className={s.percentage}>{ stat.percentage}%</span>
               
                     </li>
                    
@@ -25,7 +25,7 @@ function Statistics({ stats}) {
  </div>
 }
 
-Statistics.prototype = {
+Statistics.propTypes = {
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
 }
