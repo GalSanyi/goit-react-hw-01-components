@@ -1,15 +1,14 @@
 import defaultImage from './default.jpg';
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
+import Stats from './Stats';
 
 function Profile({
   avatar = defaultImage,
   username = 'not found',
   tag,
   location,
-  followers,
-  views,
-  likes,
+  stats,
 }) {
   return (
     <div className={s.profile}>
@@ -19,21 +18,7 @@ function Profile({
         <p className={s.tag}>{tag}</p>
         <p className={s.location}>{location}</p>
       </div>
-
-      <ul className={s.stats}>
-        <li className={s.box}>
-          <span className={s.lable}>Followers</span>
-          <span className={s.quantity}>{followers}</span>
-        </li>
-        <li className={s.box}>
-          <span className={s.lable}>Views</span>
-          <span className={s.quantity}>{views}</span>
-        </li>
-        <li className={s.box}>
-          <span className={s.lable}>Likes</span>
-          <span className={s.quantity}>{likes}</span>
-        </li>
-      </ul>
+      <Stats {...stats} />
     </div>
   );
 }
