@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
-export default function FriendListItem({ id, isOnline, avatar, name }) {
+export default function FriendListItem({ isOnline, avatar, name }) {
   return (
-    <li key={id} className={s.item}>
+    <li className={s.item}>
       <span
         className={s.status}
         style={
@@ -18,8 +18,7 @@ export default function FriendListItem({ id, isOnline, avatar, name }) {
   );
 }
 FriendListItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  isLoading: PropTypes.bool.isRequired,
+  isOnline: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
